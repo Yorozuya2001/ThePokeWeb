@@ -1,0 +1,112 @@
+.inputSearchBar {
+  height: 35px;
+  width: 250px;
+  border: none;
+  padding: 12px;
+}
+
+.buttonSearchBar {
+  width: 80px;
+  height: 35px;
+  border: none;
+  background-color: var(--secondary-color);
+  color: white;
+  animation: colorCycle 80s infinite;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.buttonSearchBar:hover {
+  background-color: var(--secondary-color);
+  color: var(--black);
+}
+
+.searchBarContainer {
+  padding-top: 32px;
+}
+
+@keyframes colorCycle {
+  0% {
+    background-color: #a8a878;
+  }
+
+  5% {
+    background-color: #c03028;
+  }
+
+  10% {
+    background-color: #a890f0;
+  }
+
+  15% {
+    background-color: #a040a0;
+  }
+
+  20% {
+    background-color: #e0c068;
+  }
+
+  25% {
+    background-color: #b8a038;
+  }
+
+  30% {
+    background-color: #a8b820;
+  }
+
+  35% {
+    background-color: #705898;
+  }
+
+  40% {
+    background-color: #b8b8d0;
+  }
+
+  45% {
+    background-color: #f08030;
+  }
+
+  50% {
+    background-color: #6890f0;
+  }
+
+  55% {
+    background-color: #78c850;
+  }
+
+  60% {
+    background-color: #f8d030;
+  }
+
+  65% {
+    background-color: #f85888;
+  }
+
+  70% {
+    background-color: #98d8d8;
+  }
+
+  75% {
+    background-color: #7038f8;
+  }
+
+  80% {
+    background-color: #705848;
+  }
+
+  85% {
+    background-color: #ee99ac;
+  }
+
+  90% {
+    background-color: #68a090;
+  }
+
+  95% {
+    background-color: #000000;
+  }
+
+  100% {
+    background-color: #a8a878;
+  }
+}
