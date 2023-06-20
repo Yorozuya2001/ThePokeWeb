@@ -5,5 +5,40 @@
   align-items: center;
   flex-wrap: wrap;
   padding: 32px;
-  padding-top: 82px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.buttonsContainer {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.buttonsContainer > button {
+  border-radius: 10px;
+  border: none;
+  background-color: var(--secondary-color);
+  height: 35px;
+  width: 50px;
+  color: var(--white);
+  font-weight: 600;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.buttonsContainer > button:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.buttonsContainer > span {
+  width: 200px;
+  text-align: center;
+  color: var(--white);
+  font-weight: 600;
+  font-size: 1.2rem;
 }

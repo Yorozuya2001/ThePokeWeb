@@ -21,10 +21,6 @@
   color: var(--black);
 }
 
-.searchBarContainer {
-  padding-top: 32px;
-}
-
 @keyframes colorCycle {
   0% {
     background-color: #a8a878;

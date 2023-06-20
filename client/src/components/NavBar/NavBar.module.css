@@ -1,0 +1,49 @@
+.header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 288px;
+}
+
+.ul {
+  display: flex;
+  list-style: none;
+  justify-content: end;
+  gap: 100px;
+  align-items: center;
+  height: inherit;
+}
+
+.ul li {
+  font-weight: 900;
+  font-size: 1.2rem;
+  color: var(--white);
+  text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
+}
+
+.ul li:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+
+  transform: scale(1.1);
+}
+
+.navBar {
+  width: 80%;
+  height: inherit;
+}
+
+.imageContainer {
+  width: 20%;
+
+  height: inherit;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.imageLogo {
+  height: 60px;
+  width: auto;
+}

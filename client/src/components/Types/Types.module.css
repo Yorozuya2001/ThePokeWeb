@@ -1,0 +1,55 @@
+.typesContainer {
+  display: flex;
+  gap: 16px;
+  position: relative;
+}
+
+.typesContainer h2 {
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--white);
+}
+.checkboxContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 150px);
+  grid-gap: 10px;
+  padding: 16px;
+  position: absolute;
+  top: 34px;
+  left: -3px;
+  z-index: 1;
+  background-color: var(--secondary-color);
+}
+
+.checkboxContainer input {
+  cursor: pointer;
+}
+
+.checkboxContainer div {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100px;
+}
+
+.checkboxContainer label {
+  margin-left: 8px;
+  color: var(--white);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.filterContainer {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.filterContainer img {
+  width: 100%;
+  height: inherit;
+}
+
+.display {
+  display: none;
+}

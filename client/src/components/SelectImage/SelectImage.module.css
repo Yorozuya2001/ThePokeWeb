@@ -1,0 +1,10 @@
+.typeImageContainer {
+  display: flex;
+  position: relative;
+}
+
+.typeImage {
+  width: 35px;
+  height: inherit;
+  cursor: pointer;
+}
