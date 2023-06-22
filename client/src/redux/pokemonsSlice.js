@@ -5,6 +5,7 @@ const initialState = {
   pokemons: [],
   types: [],
   pokemonsFiltered: [],
+  pikachu: "",
 };
 
 const pokemonsSlice = createSlice({
@@ -12,6 +13,9 @@ const pokemonsSlice = createSlice({
   initialState,
   reducers: {
     setPokemons: (state, action) => {
+      if (!state.pikachu) {
+        state.pikachu = action.payload[24];
+      }
       state.pokemons = action.payload;
       state.pokemonsFiltered = action.payload;
     },

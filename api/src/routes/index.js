@@ -11,12 +11,19 @@ const createPokemon = require("../controllers/createPokemon");
 /* middleware */
 const validatePokemon = require("../middleware/validatePokemon");
 
+let { cache } = require("../cache");
+
 const router = Router();
 
 router.get("/pokemons", async (req, res) => {
   try {
-    const pokemon = await getPokemons();
-    res.status(200).json(pokemon);
+    if (cache.length > 0) {
+      res.status(200).json(cache);
+    } else {
+      const pokemon = await getPokemons();
+      cache.push(...pokemon);
+      res.status(200).json(pokemon);
+    }
   } catch (error) {
     res.status(500).json({ error: error.message });
   }

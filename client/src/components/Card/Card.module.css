@@ -9,6 +9,28 @@
   margin: 16px;
   padding: 16px;
   margin-top: 116px;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.29);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.29);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.29);
+  cursor: pointer;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+  animation: aparecer 0.4s ease-out;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card:hover {
+  transform: scale(1.1, 1.1);
 }
 
 .cardImage {

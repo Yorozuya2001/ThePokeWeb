@@ -7,6 +7,7 @@ import { useDispatch } from "react-redux";
 import { setPokemons, setTypes } from "./redux/pokemonsSlice";
 import NavBar from "./components/NavBar/NavBar";
 import { useLocation } from "react-router-dom";
+import CardDetail from "./components/CardDetail/CardDetail";
 
 function App() {
   let { pathname } = useLocation();
@@ -31,6 +32,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/home" element={<Home />} />
+          <Route path="/pokemon/:id" element={<CardDetail />} />
         </Routes>
       </div>
     </>

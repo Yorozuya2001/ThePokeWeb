@@ -17,5 +17,6 @@
 
 .inputs {
   display: flex;
+  flex-wrap: wrap;
   gap: 72px;
 }

@@ -18,7 +18,7 @@
   top: 34px;
   left: -3px;
   z-index: 1;
-  background-color: var(--secondary-color);
+  background-color: #000000;
 }
 
 .checkboxContainer input {

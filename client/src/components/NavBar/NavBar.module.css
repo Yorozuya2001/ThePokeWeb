@@ -14,7 +14,7 @@
   height: inherit;
 }
 
-.ul li {
+.ul a {
   font-weight: 900;
   font-size: 1.2rem;
   color: var(--white);
@@ -22,7 +22,7 @@
   transition: all 0.5s ease-in-out;
 }
 
-.ul li:hover {
+.ul a:hover {
   color: var(--primary-color);
   cursor: pointer;
 

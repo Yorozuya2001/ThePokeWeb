@@ -3,6 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   orderBy: {},
   filterBy: {},
+  sprite: "home",
 };
 
 export const orderSlice = createSlice({
@@ -15,8 +16,11 @@ export const orderSlice = createSlice({
     filterOptions: (state, action) => {
       state.filterBy = action.payload;
     },
+    spriteOption: (state, action) => {
+      state.sprite = action.payload;
+    },
   },
 });
 
-export const { orderOptions, filterOptions } = orderSlice.actions;
+export const { orderOptions, filterOptions, spriteOption } = orderSlice.actions;
 export default orderSlice.reducer;

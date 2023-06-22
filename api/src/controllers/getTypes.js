@@ -5,8 +5,8 @@ const { Type } = require("../db");
 
 const getTypes = async () => {
   const typesInDB = await Type.findAll();
-  console.log(typesInDB);
-  if (typesInDB.length) return "All types of pokemons are loaded";
+
+  if (typesInDB.length) return typesInDB;
 
   const { data } = await axios.get(`${API_URL_BASE}/type`);
   data.results.map((result) => {

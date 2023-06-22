@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 
 const Cards = () => {
   const pokemons = useSelector((state) => state.pokemons.pokemonsFiltered);
+  const sprite = useSelector((state) => state.options.sprite);
   const cardsPerPage = 12;
   const [pagesNumbers, setPagesNumbers] = useState(0);
   const [pokemonsInPage, setPokemonsInPage] = useState([]);
@@ -64,7 +65,7 @@ const Cards = () => {
                 id={pokemon.id}
                 pokemon={pokemon.name}
                 types={pokemon.types}
-                image={pokemon.image}
+                image={pokemon[sprite]}
               />
             );
           })}

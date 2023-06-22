@@ -20,19 +20,31 @@ const SearchBar = () => {
     }
   };
 
+  const handleClickInAll = () => {
+    fetch("http://localhost:3001/pokemons")
+      .then((res) => res.json())
+      .then((data) => dispatch(setPokemons(data)))
+      .catch((err) => console.log(err));
+  };
+
   return (
-    <div className={styles.searchBarContainer}>
-      <input
-        className={styles.inputSearchBar}
-        type="text"
-        placeholder="Search a pokemon..."
-        value={search}
-        onChange={(event) => setSearch(event.target.value)}
-      />
-      <button className={styles.buttonSearchBar} onClick={handleClick}>
-        Search
+    <>
+      <div className={styles.searchBarContainer}>
+        <input
+          className={styles.inputSearchBar}
+          type="text"
+          placeholder="Search a pokemon..."
+          value={search}
+          onChange={(event) => setSearch(event.target.value)}
+        />
+        <button className={styles.buttonSearchBar} onClick={handleClick}>
+          Search
+        </button>
+      </div>
+      <button className={styles.allButton} onClick={handleClickInAll}>
+        All pokemons
       </button>
-    </div>
+    </>
   );
 };
 

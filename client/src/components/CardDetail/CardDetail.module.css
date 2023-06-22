@@ -1,0 +1,117 @@
+.cardDetailContainer {
+  width: 80%;
+  height: 700px;
+  border-radius: 10px;
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  animation: aparecer 1.5s ease-out;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.pokemonContainer {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.image {
+  width: 300px;
+  height: auto;
+}
+
+.pokemonContainer h2 {
+  font-size: var(--font-id);
+  font-weight: 900;
+  color: var(--white);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.statsContainer {
+  width: 40%;
+}
+
+.statsDataContainer {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-gap: 32px;
+}
+
+.statsDataContainer div h4,
+.physics div h4 {
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: var(--white);
+
+  text-transform: uppercase;
+}
+
+.statsDataContainer div p,
+.physics div p {
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 72px;
+  overflow: hidden;
+}
+
+.statsTitle {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: var(--white);
+  margin-top: 16px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.physics {
+  display: grid;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-gap: 32px;
+}
+
+.stat {
+  color: var(--white);
+}
+
+.backButton {
+  position: relative;
+  display: inline;
+  height: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  top: 30px;
+  left: 190px;
+  padding: 16px;
+  background-color: var(--secondary-color);
+  color: var(--white);
+  transition: all 0.3s ease-in-out;
+}
+
+.backButton:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}

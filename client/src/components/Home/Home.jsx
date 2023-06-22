@@ -9,11 +9,14 @@ import SelectImage from "../SelectImage/SelectImage";
 const Home = () => {
   const [filterActive, setFilterActive] = useState(false);
   const [filterOff, setFilterOff] = useState(false);
+  const [spriteOption, setSpriteOption] = useState(false);
+
   return (
     <>
       <div className={styles.navigation}>
         <div className={styles.inputs}>
           <SearchBar />
+
           <OrderBy />
           <Types
             filterActive={filterActive}
@@ -21,7 +24,10 @@ const Home = () => {
             setFilterOff={setFilterOff}
             filterOff={filterOff}
           />
-          <SelectImage />
+          <SelectImage
+            spriteOptionState={spriteOption}
+            setSpriteOption={setSpriteOption}
+          />
         </div>
       </div>
       <div className={styles.containerOfDivCards}>

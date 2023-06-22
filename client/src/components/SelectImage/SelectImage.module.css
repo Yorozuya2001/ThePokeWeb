@@ -5,6 +5,42 @@
 
 .typeImage {
   width: 35px;
-  height: inherit;
+  height: 35px;
   cursor: pointer;
+}
+
+.spritesContainer {
+  background-color: #000000;
+  padding: 16px;
+  position: absolute;
+  top: 34px;
+  left: -160px;
+  z-index: 2;
+}
+
+.spritesContainer h3 {
+  color: var(--white);
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.sprites {
+  display: flex;
+  gap: 16px;
+}
+
+.spritesContainer img {
+  width: 75px;
+  height: 75px;
+  transition: all 0.3s ease-in-out;
+}
+
+.spritesContainer img:hover {
+  transform: scale(1.1, 1.1);
+  cursor: pointer;
+}
+
+.displayNone {
+  display: none;
 }

@@ -21,6 +21,17 @@
   color: var(--black);
 }
 
+.allButton {
+  width: 150px;
+  height: 35px;
+  border: none;
+  background-color: var(--secondary-color);
+  color: white;
+  animation: colorCycle 80s infinite;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
 @keyframes colorCycle {
   0% {
     background-color: #a8a878;
