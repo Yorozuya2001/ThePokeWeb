@@ -2,6 +2,7 @@ import { useState } from "react";
 import styles from "./SearchBar.module.css";
 import { useDispatch } from "react-redux";
 import { setPokemons } from "../../redux/pokemonsSlice";
+import { URL } from "../../url";
 
 const SearchBar = () => {
   const dispatch = useDispatch();
@@ -9,9 +10,7 @@ const SearchBar = () => {
 
   const handleClick = async () => {
     try {
-      let data = await fetch(
-        `http://localhost:3001/pokemons/name?search=${search}`
-      );
+      let data = await fetch(`${URL}/pokemons/name?search=${search}`);
       data = await data.json();
       console.log(data);
       dispatch(setPokemons(data));
@@ -21,7 +20,7 @@ const SearchBar = () => {
   };
 
   const handleClickInAll = () => {
-    fetch("http://localhost:3001/pokemons")
+    fetch(`${URL}/pokemons`)
       .then((res) => res.json())
       .then((data) => dispatch(setPokemons(data)))
       .catch((err) => console.log(err));

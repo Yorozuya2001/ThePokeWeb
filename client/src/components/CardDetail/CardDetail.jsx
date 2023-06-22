@@ -3,6 +3,7 @@ import styles from "./CardDetail.module.css";
 import { Link, useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 import CountUp from "react-countup";
+import { URL } from "../../url";
 
 const CardDetail = () => {
   const { id } = useParams();
@@ -10,7 +11,7 @@ const CardDetail = () => {
   const [pokemonData, setPokemonData] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:3001/pokemons/${id}`)
+    fetch(`${URL}/pokemons/${id}`)
       .then((res) => res.json())
       .then((data) => setPokemonData(data))
       .catch((err) => console.log(err));
