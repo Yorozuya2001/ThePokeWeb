@@ -19,7 +19,7 @@ function App() {
       .then((data) => dispatch(setPokemons(data)))
       .catch((err) => console.log(err));
 
-    fetch(`${URL}types`)
+    fetch(`${URL}/types`)
       .then((res) => res.json())
       .then((data) => dispatch(setTypes(data)))
       .catch((err) => console.log(err));

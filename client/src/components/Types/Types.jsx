@@ -5,6 +5,7 @@ import { setPokemonsFiltered } from "../../redux/pokemonsSlice";
 import { filterOptions } from "../../redux/optionsSlice";
 import FilterSource from "../../assets/filter-svgrepo-com.svg";
 import FilterOffSource from "../../assets/filter-off-svgrepo-com.svg";
+import PropTypes from "prop-types";
 
 const Types = ({ filterActive, setFilterActive, setFilterOff, filterOff }) => {
   const types = useSelector((state) => state.pokemons.types);
@@ -81,6 +82,13 @@ const Types = ({ filterActive, setFilterActive, setFilterOff, filterOff }) => {
       </div>
     </div>
   );
+};
+
+Types.propTypes = {
+  filterActive: PropTypes.bool.isRequired,
+  setFilterActive: PropTypes.func.isRequired,
+  setFilterOff: PropTypes.func.isRequired,
+  filterOff: PropTypes.bool.isRequired,
 };
 
 export default Types;
