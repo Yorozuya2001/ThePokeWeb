@@ -35,7 +35,7 @@
 
 .cardImage {
   width: 170px;
-  height: auto;
+  height: 170px;
   position: absolute;
   right: 56px;
   bottom: 210px;
@@ -87,4 +87,50 @@
 .typeIcon {
   width: 30px;
   height: auto;
+}
+
+@media (max-width: 576px) {
+  .card {
+    width: 231px;
+    height: 220px;
+  }
+
+  .cardImage {
+    width: 140px;
+    height: 140px;
+    right: 43px;
+    bottom: 175px;
+  }
+
+  .id {
+    font-size: 2.5rem;
+    margin-top: -0.5em;
+    margin-bottom: -0.2em;
+  }
+
+  .pokemon {
+    font-size: 1.2rem;
+    margin-top: 6px;
+  }
+
+  .ul {
+    gap: 4px;
+    margin-top: 16px;
+  }
+
+  .ul li {
+    border-radius: 16px;
+    border: 1px solid var(--white);
+
+    padding: 8px;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .typeIcon {
+    width: 20px;
+    height: auto;
+  }
 }

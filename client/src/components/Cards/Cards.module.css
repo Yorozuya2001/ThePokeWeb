@@ -42,3 +42,33 @@
   font-weight: 600;
   font-size: 1.2rem;
 }
+
+@media (max-width: 576px) {
+  .cardsContainer {
+    padding-top: 24px;
+  }
+
+  .buttonsContainer > span {
+    width: 125px;
+    font-size: 1rem;
+  }
+
+  .buttonsContainer > button {
+    border-radius: 10px;
+    border: none;
+    background-color: var(--secondary-color);
+    height: 30px;
+    width: 30px;
+    color: var(--white);
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .buttonsContainer {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+}

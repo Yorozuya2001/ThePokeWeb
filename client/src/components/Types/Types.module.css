@@ -53,3 +53,19 @@
 .display {
   display: none;
 }
+
+@media (max-width: 576px) {
+  .checkboxContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 110px);
+    grid-gap: 12px;
+    padding: 16px;
+
+    top: 34px;
+    left: -84px;
+  }
+
+  .display {
+    display: none;
+  }
+}

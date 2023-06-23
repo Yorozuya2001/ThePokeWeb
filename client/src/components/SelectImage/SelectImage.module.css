@@ -44,3 +44,20 @@
 .displayNone {
   display: none;
 }
+
+@media (max-width: 576px) {
+  .spritesContainer {
+    top: 34px;
+    left: -133px;
+  }
+
+  .spritesContainer img {
+    width: 55px;
+    height: 55px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .displayNone {
+    display: none;
+  }
+}

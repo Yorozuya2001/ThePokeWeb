@@ -4,3 +4,9 @@
   padding-left: 16px;
   border: none;
 }
+
+@media (max-width: 576px) {
+  .select {
+    width: 280px;
+  }
+}

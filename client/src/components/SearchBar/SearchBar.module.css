@@ -117,3 +117,14 @@
     background-color: #a8a878;
   }
 }
+
+@media (max-width: 576px) {
+  .inputSearchBar {
+    width: 200px;
+  }
+
+  .allButton {
+    width: 280px;
+    height: 35px;
+  }
+}

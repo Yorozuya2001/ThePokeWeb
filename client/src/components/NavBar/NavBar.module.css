@@ -47,3 +47,43 @@
   height: 60px;
   width: auto;
 }
+
+@media (max-width: 490px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .imageContainer {
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0 16px;
+  }
+
+  .navBar {
+    width: 100%;
+  }
+
+  .ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+
+    gap: 16px;
+    align-items: center;
+    height: inherit;
+  }
+
+  .ul a {
+    font-weight: 900;
+    font-size: 1rem;
+    color: var(--white);
+    text-transform: uppercase;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+  }
+}
