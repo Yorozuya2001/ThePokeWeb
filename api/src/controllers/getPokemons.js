@@ -3,7 +3,7 @@ const { API_URL_BASE } = process.env;
 const axios = require("axios");
 const getPokemons = async () => {
   const { data } = await axios.get(
-    `${API_URL_BASE}/pokemon?offset=0&limit=300`
+    `${API_URL_BASE}/pokemon?offset=0&limit=1281`
   );
 
   const promises = data.results.map(async (pokemon) => {

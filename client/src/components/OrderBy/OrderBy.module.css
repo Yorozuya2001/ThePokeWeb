@@ -10,3 +10,15 @@
     width: 280px;
   }
 }
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .select {
+    width: 480px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1300px) {
+  .select {
+    width: 580px;
+  }
+}

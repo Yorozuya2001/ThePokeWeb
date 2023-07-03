@@ -1,6 +1,7 @@
 .cardDetailContainer {
+  margin-top: 64px;
   width: 80%;
-  height: 700px;
+  height: 550px;
   border-radius: 10px;
   padding: 32px;
   display: flex;
@@ -87,7 +88,6 @@
 
 .physics {
   display: grid;
-  display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
   grid-gap: 32px;
@@ -114,4 +114,68 @@
 .backButton:hover {
   background-color: var(--primary-color);
   color: var(--secondary-color);
+}
+
+@media (max-width: 1280px) {
+  .cardDetailContainer {
+    width: 90%;
+  }
+
+  .backButton {
+    left: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cardDetailContainer {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .statsTitle {
+    text-align: center;
+  }
+
+  .statsDataContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .statsDataContainer div h4,
+  .physics div h4 {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .statsDataContainer div p,
+  .physics div p {
+    color: var(--white);
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .stat {
+    display: block;
+    text-align: center;
+  }
+
+  .pokemonContainer h2 {
+    font-size: 2.5rem;
+  }
+
+  .backButton {
+    left: 20px;
+    top: 100px;
+  }
+
+  .physics {
+    display: flex;
+    justify-content: center;
+    margin: 32px 0;
+  }
 }

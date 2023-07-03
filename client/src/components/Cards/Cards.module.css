@@ -72,3 +72,9 @@
     gap: 8px;
   }
 }
+
+@media (max-width: 992px) {
+  .cardsContainer {
+    width: 100%;
+  }
+}

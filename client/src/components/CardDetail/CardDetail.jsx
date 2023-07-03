@@ -4,6 +4,7 @@ import { Link, useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 import CountUp from "react-countup";
 import { URL } from "../../url";
+import DefaultImageSource from "../../assets/not-image.png";
 
 const CardDetail = () => {
   const { id } = useParams();
@@ -28,11 +29,20 @@ const CardDetail = () => {
             className={`${styles.cardDetailContainer} ${pokemonData?.types[0]} `}
           >
             <div className={styles.pokemonContainer}>
-              <img
-                className={styles.image}
-                src={pokemonData[sprite]}
-                alt={pokemonData.name}
-              />
+              {pokemonData[sprite] ? (
+                <img
+                  className={styles.image}
+                  src={pokemonData[sprite]}
+                  alt={pokemonData.name}
+                />
+              ) : (
+                <img
+                  className={styles.image}
+                  src={DefaultImageSource}
+                  alt={pokemonData.name}
+                />
+              )}
+
               <h2>{pokemonData.name}</h2>
             </div>
             <div className={styles.statsContainer}>

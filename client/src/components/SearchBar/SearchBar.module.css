@@ -128,3 +128,22 @@
     height: 35px;
   }
 }
+@media (min-width: 577px) and (max-width: 768px) {
+  .inputSearchBar {
+    width: 400px;
+  }
+
+  .allButton {
+    width: 480px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1300px) {
+  .inputSearchBar {
+    width: 500px;
+  }
+
+  .allButton {
+    width: 580px;
+  }
+}

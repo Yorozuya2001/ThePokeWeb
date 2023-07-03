@@ -89,10 +89,10 @@
   height: auto;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 992px) {
   .card {
     width: 231px;
-    height: 220px;
+    height: 230px;
   }
 
   .cardImage {
